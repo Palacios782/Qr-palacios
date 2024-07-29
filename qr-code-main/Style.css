@@ -1,0 +1,76 @@
+/* Variables de colores */
+:root {
+    --color-blanco: hsl(0, 0%, 100%);
+    --color-gris-claro: hsl(212, 45%, 89%);
+    --color-azul-grisaceo: hsl(220, 15%, 55%);
+    --color-azul-oscuro: hsl(218, 44%, 22%);
+  }
+  
+  /* Configuración de fuente */
+  body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color: var(--color-azul-oscuro);
+    background-color: var(--color-blanco);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  /* Tipografía */
+  p {
+    font-size: 15px;
+    margin: 0 0 1rem;
+  }
+  
+ 
+  /* Disposición para móvil y escritorio */
+  .container {
+    max-width: 375px;
+    padding: 1rem;
+    background-color: var(--color-gris-claro);
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 1440px) {
+    .container {
+      max-width: 1440px;
+    }
+  }
+  
+  /* Estilos adicionales */
+  .bg-gris-claro {
+    background-color: var(--color-gris-claro);
+  }
+  
+  .texto-azul-grisaceo {
+    color: var(--color-azul-grisaceo);
+  }
+  
+  .attribution {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .attribution a {
+    color: var(--color-azul-grisaceo);
+    text-decoration: none;
+  }
+  
+  /* Asegurando la responsividad */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 320px) {
+    body {
+      font-size: 14px; /* Ajustar el tamaño de la fuente para pantallas muy pequeñas */
+    }
+  }
+  
